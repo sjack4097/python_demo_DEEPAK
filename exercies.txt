@@ -1,0 +1,145 @@
+Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> print("Hello Potti")
+Hello Potti
+>>> import keyword
+>>> keyword.kwlist
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> 
+= RESTART: C:/Users/admin/Documents/Python Intership files/Assignments/keywords.py
+['False', 'None', 'True', 'and', 'as', 'assert', 'async', 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with', 'yield']
+>>> keyword.iskeyword("Ruchita")
+False
+>>> keyword.iskeyword.__doc__
+'x.__contains__(y) <==> y in x.'
+>>> import math
+>>> math.factorial.__doc__
+'Find x!.\n\nRaise a ValueError if x is negative or non-integral.'
+>>> 
+>>> x=102
+>>> x
+102
+>>> type(x)
+<class 'int'>
+>>> y=0B1011
+>>> y
+11
+>>> type(y)
+<class 'int'>
+>>> c=0x
+SyntaxError: invalid hexadecimal literal
+>>> x=0xf1
+>>> x
+241
+>>> type(x
+     )
+<class 'int'>
+>>> 0o71
+57
+>>> bin(20)
+'0b10100'
+>>> bin(0XF1)
+'0b11110001'
+>>> oct(0b10100)
+'0o24'
+>>> oct(20)
+'0o24'
+>>> hex(20)
+'0x14'
+>>> bin(0b101+0b111)
+'0b1100'
+>>> bin(0b101)+bin(0b111)
+'0b1010b111'
+>>> print(bin(0b101)+bin(0b111))
+0b1010b111
+>>> bin(0b1100-0b0111)
+'0b101'
+>>> bin(5)
+'0b101'
+>>> bin(0b1100*0b0111)
+'0b1010100'
+>>> bin(0b1010100)
+'0b1010100'
+>>> hex(0b1010100)
+'0x54'
+>>> oct(0b1010100)
+'0o124'
+>>> bin(124)
+'0b1111100'
+>>> a=10+10j
+>>> b=20+20k
+SyntaxError: invalid syntax
+>>> SyntaxError: invalid syntax
+SyntaxError: invalid syntax
+>>> b=20+30j
+>>> a+b
+(30+40j)
+>>> a-b
+(-10-20j)
+>>> a*b
+(-100+500j)
+>>> a/b
+(0.3846153846153846-0.07692307692307694j)
+>>> a//b
+Traceback (most recent call last):
+  File "<pyshell#43>", line 1, in <module>
+    a//b
+TypeError: can't take floor of complex number.
+>>> 
+>>> a.real.imag
+0.0
+>>> a.real
+10.0
+>>> a.imag
+10.0
+>>> b.real
+20.0
+>>> b.imag
+30.0
+>>> a=True
+>>> b=False
+>>> type(a)
+<class 'bool'>
+>>> bin(a)
+'0b1'
+>>> 
+>>> a
+True
+>>> True+True
+2
+>>> bin(a)
+'0b1'
+>>> False+True
+1
+>>> True and True
+True
+>>> True or True
+True
+>>> 20 and true
+Traceback (most recent call last):
+  File "<pyshell#61>", line 1, in <module>
+    20 and true
+NameError: name 'true' is not defined
+>>> 20 and True
+True
+>>> True and 20
+20
+>>> True and False
+False
+>>> False and True
+False
+>>> True and 0
+0
+>>> True or 20
+True
+>>> 20 or True
+20
+>>> True not 20
+SyntaxError: invalid syntax
+>>> True and None
+>>> 
+>>> False and 20
+False
+>>> 20 and False
+False
+>>> 
