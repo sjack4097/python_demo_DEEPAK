@@ -1,3 +1,4 @@
+print("playing with github")
 number=int(input("enter any number"))
 s=str(number)
 if(s[0]==s[-1]):
