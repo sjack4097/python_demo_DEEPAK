@@ -5,4 +5,5 @@ s=str(number)
 if(s[0]==s[-1]):
     print("1st and lasts digits are same")
 else:
-    print("1st and lasts digits are different ")
+    print("error")
+
