@@ -1,0 +1,18 @@
+from this link ==== http://localhost/phpmyadmin/sql.php?server=1&db=librarydb&table=issue&pos=0&token=6e69ae610333fd8a99b67b1d8b18129e
+NATURAL JOIN
+SELECT * FROM `student` NATURAL JOIN issue 
+SELECT fname,lname,issuedate,datediff(CURRENT_DATE,issuedate)  FROM `student` NATURAL JOIN issue where returndate is null
+SELECT fname,lname,issuedate,datediff(CURRENT_DATE,issuedate)-7  FROM `student` NATURAL JOIN issue where returndate is null
+SELECT fname,lname,issuedate,(datediff(CURRENT_DATE,issuedate)-7)*50 SELECT fname,lname,(datediff(CURRENT_DATE,issuedate)-7)*50 as Fine FROM `student` NATURAL JOIN issue where returndate is null AND (datediff(CURRENT_DATE,issuedate)>7)as Fine FROM `student` NATURAL JOIN issue where returndate is null
+find book in library with book name start with java
+SELECT COUNT(*) FROM `book` NATURAL JOIN title WHERE title LIKE '%java%'
+
+find available book in library with title java
+SELECT * FROM `book` NATURAL JOIN title WHERE title LIKE '%java%' and accessionnumber not in (SELECT accessionnumber FROM `issue`)
+
+Group by clause
+
+SELECT courseid,COUNT(studentid) FROM `student` GROUP BY courseid // display group of same courses
+SELECT courseid,AVG(percentage) FROM `student` GROUP BY courseid// display group of same courses of average
+SELECT semester,COUNT(subid) FROM `subject` GROUP BY semester HAVING (COUNT(subid)>3)//having
+SELECT fname,lname FROM `issue` NATURAL JOIN student NATURAL JOIN book NATURAL JOIN title where title like '%java%'//book name java
