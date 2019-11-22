@@ -1,4 +1,7 @@
-print("playing with github")
+print("playing with github"
+      ""
+      ""
+      "")
 print("code edited by github")
 number=int(input("enter any number"))
 s=str(number)
